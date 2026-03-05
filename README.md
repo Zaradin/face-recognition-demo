@@ -8,7 +8,6 @@ The project is implemented as a **Jupyter Notebook demo**, designed to illustrat
 
 The pipeline implemented in this project follows these steps:
 
-
 1. **Face Detection**  
    Detect faces within an image and return bounding boxes.
 
@@ -24,7 +23,6 @@ The pipeline implemented in this project follows these steps:
 ## Example Output
 
 The system detects faces in an image and labels them with the predicted identity and similarity score.
-
 
 Bounding boxes are drawn around detected faces.
 
@@ -75,17 +73,17 @@ The pack contains multiple pretrained models for different face analysis tasks.
 
 Typical contents:
 
-| Model | Purpose |
-|-----|------|
-| `det_10g.onnx` | Face detection |
-| `w600k_r50.onnx` | Face recognition embeddings |
-| `2d106det.onnx` | 2D facial landmark detection |
-| `1k3d68.onnx` | 3D facial landmarks |
-| `genderage.onnx` | Age and gender prediction |
+| Model            | Purpose                      |
+| ---------------- | ---------------------------- |
+| `det_10g.onnx`   | Face detection               |
+| `w600k_r50.onnx` | Face recognition embeddings  |
+| `2d106det.onnx`  | 2D facial landmark detection |
+| `1k3d68.onnx`    | 3D facial landmarks          |
+| `genderage.onnx` | Age and gender prediction    |
 
 For this project, only the following models are used:
 
-- **`det_10g.onnx`** – detects faces in an image  
+- **`det_10g.onnx`** – detects faces in an image
 - **`w600k_r50.onnx`** – generates 512-dimensional face embeddings
 
 Other models in the pack are ignored.
@@ -100,7 +98,7 @@ Example:
 Amil → [0.12, -0.88, 0.41, ...]
 Tom → [-0.71, 0.34, 0.55, ...]
 
-![Amils Face](./image_predictions/amil_predict.jpg)
+<img src="./image_predictions/amil_predict.jpg" width="150"/>
 
 Faces belonging to the same person produce **similar embeddings**, while different individuals produce **distant embeddings**.
 
