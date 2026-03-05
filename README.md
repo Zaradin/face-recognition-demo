@@ -4,8 +4,6 @@ This project demonstrates a simple **face recognition pipeline** implemented in 
 
 The project is implemented as a **Jupyter Notebook demo**, designed to illustrate how modern face recognition systems work using deep learning and similarity-based matching.
 
----
-
 ## Overview
 
 The pipeline implemented in this project follows these steps:
@@ -23,16 +21,12 @@ The pipeline implemented in this project follows these steps:
 4. **Identity Prediction**  
    The closest embedding (highest similarity score) determines the predicted identity.
 
----
-
 ## Example Output
 
 The system detects faces in an image and labels them with the predicted identity and similarity score.
 
 
 Bounding boxes are drawn around detected faces.
-
----
 
 ## Technologies Used
 
@@ -51,8 +45,6 @@ InsightFace provides pretrained models for:
 GitHub:  
 https://github.com/deepinsight/insightface
 
----
-
 ### ONNX
 
 The models used in InsightFace are stored in **ONNX (Open Neural Network Exchange)** format.
@@ -61,8 +53,6 @@ ONNX is a standard format for machine learning models that allows models trained
 
 Official site:  
 https://onnx.ai/
-
----
 
 ### ONNX Runtime
 
@@ -76,8 +66,6 @@ It supports multiple execution providers including:
 
 Docs:  
 https://onnxruntime.ai/
-
----
 
 ## Model Pack: `buffalo_l`
 
@@ -102,8 +90,6 @@ For this project, only the following models are used:
 
 Other models in the pack are ignored.
 
----
-
 ## Face Embeddings
 
 Instead of directly classifying identities, modern face recognition systems represent faces using **embeddings**.
@@ -114,12 +100,11 @@ Example:
 Amil → [0.12, -0.88, 0.41, ...]
 Tom → [-0.71, 0.34, 0.55, ...]
 
+![Amils Face](./image_predictions/admil_predict.jpg)
 
 Faces belonging to the same person produce **similar embeddings**, while different individuals produce **distant embeddings**.
 
 Identity is determined by computing a similarity score between embeddings.
-
----
 
 ## PCA Visualization
 
