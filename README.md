@@ -100,7 +100,7 @@ Example:
 Amil → [0.12, -0.88, 0.41, ...]
 Tom → [-0.71, 0.34, 0.55, ...]
 
-![Amils Face](./image_predictions/admil_predict.jpg)
+![Amils Face](./image_predictions/amil_predict.jpg)
 
 Faces belonging to the same person produce **similar embeddings**, while different individuals produce **distant embeddings**.
 
